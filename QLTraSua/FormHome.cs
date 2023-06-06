@@ -18,25 +18,39 @@ namespace QLTraSua
             InitializeComponent();
             customizeDesing();
         }
-        private void customizeDesing () 
+        private void customizeDesing()
         {
             panelBanSubMenu.Visible = false;
 
         }
         private void hideSubMenu()
         {
-            if(panelBanSubMenu.Visible == true )
+            if (panelBanSubMenu.Visible == true)
                 panelBanSubMenu.Visible = false;
         }
         private void showSubMenu(Panel subMenu)
         {
-            if(subMenu.Visible == false )
+            if (subMenu.Visible == false)
             {
                 hideSubMenu();
                 subMenu.Visible = true;
             }
-            else 
-                subMenu.Visible = false;     
+            else
+                subMenu.Visible = false;
+        }
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if(activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false; 
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void btnTable_Click(object sender, EventArgs e)
@@ -51,6 +65,7 @@ namespace QLTraSua
 
         private void btnDatBan_Click(object sender, EventArgs e)
         {
+            openChildForm(new FormBancs());
             hideSubMenu();
         }
     }

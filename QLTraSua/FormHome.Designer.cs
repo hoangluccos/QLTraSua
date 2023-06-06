@@ -42,14 +42,14 @@
             this.btnDatBan = new System.Windows.Forms.Button();
             this.btnInBill = new System.Windows.Forms.Button();
             this.btnTable = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelBanSubMenu.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -221,14 +221,14 @@
             this.btnTable.UseVisualStyleBackColor = false;
             this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
             // 
-            // panel3
+            // panelChildForm
             // 
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(203, 92);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(926, 611);
-            this.panel3.TabIndex = 3;
+            this.panelChildForm.Controls.Add(this.pictureBox2);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(203, 92);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(926, 611);
+            this.panelChildForm.TabIndex = 3;
             // 
             // pictureBox2
             // 
@@ -246,7 +246,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1129, 703);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(1147, 750);
@@ -260,7 +260,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panelBanSubMenu.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.panelChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -280,7 +280,7 @@
         private System.Windows.Forms.Button btnHoaDon;
         private System.Windows.Forms.Button btnDoanhThu;
         private System.Windows.Forms.Button btnNhapHang;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
