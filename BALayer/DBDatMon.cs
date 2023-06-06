@@ -18,19 +18,18 @@ namespace BALayer
             db = new DAL();
         }
 
-        public DataSet LayThongTinDatMon(string MaBan)
+        public DataSet LayThongTinDatMon()
         {
             return db.ExecuteQueryDataSet("select * from DatMon", CommandType.Text, null);
         }
 
-        public bool ThemDatMon(ref string err, string MaBan, string MaMon, int SoLuong, int DonGia, int ThanhTien)
+        public bool ThemDatMon(ref string err, string MaBan, string MaMon, int SoLuong, int DonGia)
         {
             return db.MyExecuteNonQuery("spThemDatMon", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@MaBan", MaBan),
                 new SqlParameter("@MaMon", MaMon),
                 new SqlParameter("SoLuong", SoLuong),
-                new SqlParameter("@DonGia", DonGia),
-                new SqlParameter("@ThanhTien", ThanhTien));
+                new SqlParameter("@DonGia", DonGia));
         }
 
         public bool CapNhatDatMon(ref string err, string MaBan, string MaMon, int SoLuong, int DonGia, int ThanhTien)

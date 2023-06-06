@@ -41,6 +41,12 @@ namespace BALayer
             return db.MyExecuteNonQuery("spCapNhatTinhTrang", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@MaBan", MaBan));
         }
+
+        public int CheckTinhTrangBan(ref string err, string MaBan)
+        {
+            return Convert.ToInt32(db.MyExecuteNonQuery("spCheckTinhTrangBan", CommandType.StoredProcedure, ref err,
+                new SqlParameter("@MaBan", MaBan)));
+        }
     }
 }
 

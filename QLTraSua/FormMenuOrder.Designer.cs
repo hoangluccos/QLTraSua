@@ -42,10 +42,18 @@
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDatMon = new System.Windows.Forms.DataGridView();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.MaMon1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonGia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvmenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatMon)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -119,16 +127,18 @@
             // btnHoanThanh
             // 
             this.btnHoanThanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnHoanThanh.Location = new System.Drawing.Point(694, 363);
+            this.btnHoanThanh.Location = new System.Drawing.Point(694, 395);
             this.btnHoanThanh.Name = "btnHoanThanh";
             this.btnHoanThanh.Size = new System.Drawing.Size(196, 48);
             this.btnHoanThanh.TabIndex = 3;
             this.btnHoanThanh.Text = "Hoàn Thành";
             this.btnHoanThanh.UseVisualStyleBackColor = false;
+            this.btnHoanThanh.Click += new System.EventHandler(this.btnHoanThanh_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(229)))), ((int)(((byte)(220)))));
+            this.panel2.Controls.Add(this.btnThem);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.btnHoanThanh);
             this.panel2.Controls.Add(this.btnExit);
@@ -141,6 +151,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.dgvDatMon);
             this.panel4.Location = new System.Drawing.Point(6, 342);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(622, 185);
@@ -193,6 +204,64 @@
             this.DonGia.Name = "DonGia";
             this.DonGia.Width = 275;
             // 
+            // dgvDatMon
+            // 
+            this.dgvDatMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatMon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaMon1,
+            this.SoLuong,
+            this.DonGia1,
+            this.ThanhTien});
+            this.dgvDatMon.Location = new System.Drawing.Point(4, 4);
+            this.dgvDatMon.Name = "dgvDatMon";
+            this.dgvDatMon.RowHeadersWidth = 51;
+            this.dgvDatMon.RowTemplate.Height = 24;
+            this.dgvDatMon.Size = new System.Drawing.Size(615, 172);
+            this.dgvDatMon.TabIndex = 0;
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnThem.Location = new System.Drawing.Point(694, 342);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(196, 48);
+            this.btnThem.TabIndex = 4;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // MaMon1
+            // 
+            this.MaMon1.DataPropertyName = "MaMon";
+            this.MaMon1.HeaderText = "Mã Món";
+            this.MaMon1.MinimumWidth = 6;
+            this.MaMon1.Name = "MaMon1";
+            this.MaMon1.Width = 125;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 125;
+            // 
+            // DonGia1
+            // 
+            this.DonGia1.DataPropertyName = "DonGia";
+            this.DonGia1.HeaderText = "Đơn Giá";
+            this.DonGia1.MinimumWidth = 6;
+            this.DonGia1.Name = "DonGia1";
+            this.DonGia1.Width = 125;
+            // 
+            // ThanhTien
+            // 
+            this.ThanhTien.DataPropertyName = "ThanhTien";
+            this.ThanhTien.HeaderText = "Thành Tiền";
+            this.ThanhTien.MinimumWidth = 6;
+            this.ThanhTien.Name = "ThanhTien";
+            this.ThanhTien.Width = 125;
+            // 
             // FormMenuOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -206,8 +275,10 @@
             this.Text = "FormMenuOrder";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvmenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatMon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,5 +299,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.DataGridView dgvDatMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaMon1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonGia1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;
     }
 }
