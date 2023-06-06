@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLTraSua", "QLTraSua\QLTraSua.csproj", "{6C15AA19-397E-40C5-B485-A6829B17EB75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBLayer", "DBLayer\DBLayer.csproj", "{60AFD06B-9FEC-447D-B9E3-B1087218BAC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BALayer", "BALayer\BALayer.csproj", "{DC783A5F-A3C7-4D05-A066-6C592E74BAFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C15AA19-397E-40C5-B485-A6829B17EB75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C15AA19-397E-40C5-B485-A6829B17EB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C15AA19-397E-40C5-B485-A6829B17EB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C15AA19-397E-40C5-B485-A6829B17EB75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60AFD06B-9FEC-447D-B9E3-B1087218BAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60AFD06B-9FEC-447D-B9E3-B1087218BAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60AFD06B-9FEC-447D-B9E3-B1087218BAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60AFD06B-9FEC-447D-B9E3-B1087218BAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC783A5F-A3C7-4D05-A066-6C592E74BAFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC783A5F-A3C7-4D05-A066-6C592E74BAFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC783A5F-A3C7-4D05-A066-6C592E74BAFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC783A5F-A3C7-4D05-A066-6C592E74BAFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE191A99-F750-4834-A648-782E2C336A09}
+	EndGlobalSection
+EndGlobal
