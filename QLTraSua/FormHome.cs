@@ -68,5 +68,10 @@ namespace QLTraSua
             openChildForm(new FormBancs());
             hideSubMenu();
         }
+
+        private void btnDoanhThu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

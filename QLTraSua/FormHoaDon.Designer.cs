@@ -47,11 +47,11 @@
             this.TongTien,
             this.NgayXuatHoaDon,
             this.MaNhanVien});
-            this.dgvHoaDonBanHang.Location = new System.Drawing.Point(43, 87);
+            this.dgvHoaDonBanHang.Location = new System.Drawing.Point(47, 77);
             this.dgvHoaDonBanHang.Name = "dgvHoaDonBanHang";
             this.dgvHoaDonBanHang.RowHeadersWidth = 51;
             this.dgvHoaDonBanHang.RowTemplate.Height = 24;
-            this.dgvHoaDonBanHang.Size = new System.Drawing.Size(751, 367);
+            this.dgvHoaDonBanHang.Size = new System.Drawing.Size(844, 367);
             this.dgvHoaDonBanHang.TabIndex = 0;
             // 
             // label1
@@ -70,7 +70,7 @@
             this.MaHoaDonBanHang.HeaderText = "Mã Hóa Đơn Bán Hàng";
             this.MaHoaDonBanHang.MinimumWidth = 6;
             this.MaHoaDonBanHang.Name = "MaHoaDonBanHang";
-            this.MaHoaDonBanHang.Width = 125;
+            this.MaHoaDonBanHang.Width = 175;
             // 
             // MaBan
             // 
@@ -94,7 +94,7 @@
             this.NgayXuatHoaDon.HeaderText = "Ngày Xuất Hóa Đơn";
             this.NgayXuatHoaDon.MinimumWidth = 6;
             this.NgayXuatHoaDon.Name = "NgayXuatHoaDon";
-            this.NgayXuatHoaDon.Width = 125;
+            this.NgayXuatHoaDon.Width = 175;
             // 
             // MaNhanVien
             // 
@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 485);
+            this.ClientSize = new System.Drawing.Size(938, 519);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvHoaDonBanHang);
             this.Name = "FormHoaDon";

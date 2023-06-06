@@ -156,6 +156,7 @@
             this.btnDoanhThu.TabIndex = 12;
             this.btnDoanhThu.Text = "Doanh Thu";
             this.btnDoanhThu.UseVisualStyleBackColor = false;
+            this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
             // 
             // btnNhapHang
             // 
