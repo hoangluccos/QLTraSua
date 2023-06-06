@@ -16,6 +16,7 @@ namespace QLTraSua
     {
         DBDoanhThu dbdoanhthu;
         DataTable dtdoanhthu = null;
+        DataView dtvdoanhthu = null;
         public FormDoanhThu()
         {
             InitializeComponent();
@@ -29,6 +30,8 @@ namespace QLTraSua
                 dtdoanhthu.Clear();
                 dtdoanhthu = dbdoanhthu.LayThongTinDoanhThu().Tables[0];
 
+                dtvdoanhthu = new DataView(dtdoanhthu);
+
                 dgvDoanhThu.DataSource = dtdoanhthu;
             }
             catch (SqlException ex)
@@ -41,6 +44,32 @@ namespace QLTraSua
         {
             LoadData();
             panel1.Enabled = false;
+        }
+
+        private void btnTraCuu_Click(object sender, EventArgs e)
+        {
+            panel1.Enabled = true;
+        }
+
+        private void btnLoc_Click(object sender, EventArgs e)
+        {
+            dtvdoanhthu.RowFilter = "NgayNhapDoanhThu>'" + dtpDau.Value.ToString() + "'";
+            dgvDoanhThu.DataSource = dtvdoanhthu;
+            int sodong = dgvDoanhThu.Rows.Count;
+            int TongDoanhThu = 0;
+            for (int i=0; i<sodong-1; i++)
+            {
+                TongDoanhThu += Convert.ToInt32(dgvDoanhThu.Rows[i].Cells["TongTien"].Value.ToString());
+            }    
+            txtTongDoanhThu.Text = TongDoanhThu.ToString();
+        }
+
+        private void btnShowAll_Click(object sender, EventArgs e)
+        {
+            dtvdoanhthu.RowFilter = "";
+            dgvDoanhThu.DataSource = dtvdoanhthu;
+            int TongDoanhThu = Convert.ToInt32(dtdoanhthu.Compute("SUM(TongTien)", string.Empty));
+            txtTongDoanhThu.Text = TongDoanhThu.ToString();
         }
     }
 }
