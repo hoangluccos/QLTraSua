@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace QLTraSua
 {
-    public partial class FormBancs : Form
+    public partial class FormHelp : Form
     {
-        public FormBancs()
+        public FormHelp()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form x = new FormMenuOrder();
-            x.StartPosition = FormStartPosition.CenterScreen;
-            x.ShowDialog();
         }
     }
 }

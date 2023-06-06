@@ -71,6 +71,22 @@ namespace QLTraSua
 
         private void btnDoanhThu_Click(object sender, EventArgs e)
         {
+            openChildForm(new FormDoanhThu());
+        }
+
+        private void btnNhapHang_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormHoaDon());
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormHelp());
 
         }
     }

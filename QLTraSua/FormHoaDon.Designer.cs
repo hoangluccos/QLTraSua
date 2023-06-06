@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.dgvHoaDonBanHang = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.MaHoaDonBanHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayXuatHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDonBanHang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,22 +47,12 @@
             this.TongTien,
             this.NgayXuatHoaDon,
             this.MaNhanVien});
-            this.dgvHoaDonBanHang.Location = new System.Drawing.Point(47, 77);
+            this.dgvHoaDonBanHang.Location = new System.Drawing.Point(35, 81);
             this.dgvHoaDonBanHang.Name = "dgvHoaDonBanHang";
             this.dgvHoaDonBanHang.RowHeadersWidth = 51;
             this.dgvHoaDonBanHang.RowTemplate.Height = 24;
-            this.dgvHoaDonBanHang.Size = new System.Drawing.Size(844, 367);
+            this.dgvHoaDonBanHang.Size = new System.Drawing.Size(844, 430);
             this.dgvHoaDonBanHang.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(200, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(468, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "DANH SÁCH HÓA ĐƠN BÁN HÀNG";
             // 
             // MaHoaDonBanHang
             // 
@@ -104,11 +94,21 @@
             this.MaNhanVien.Name = "MaNhanVien";
             this.MaNhanVien.Width = 125;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(188, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(468, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "DANH SÁCH HÓA ĐƠN BÁN HÀNG";
+            // 
             // FormHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 519);
+            this.ClientSize = new System.Drawing.Size(908, 564);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvHoaDonBanHang);
             this.Name = "FormHoaDon";

@@ -18,9 +18,21 @@ namespace BALayer
             db = new DAL();
         }
 
-        public DataSet LayThongTinMenu()
+        public DataSet LayThongTinMenuTS()
         {
-            return db.ExecuteQueryDataSet("select * from Menu", CommandType.Text, null);
+            return db.ExecuteQueryDataSet("select * from Menu where MaMon LIKE 'TS%'", CommandType.Text, null);
+        }
+        public DataSet LayThongTinMenuYK()
+        {
+            return db.ExecuteQueryDataSet("select * from Menu where MaMon LIKE 'YA%'", CommandType.Text, null);
+        }
+        public DataSet LayThongTinMenuToping()
+        {
+            return db.ExecuteQueryDataSet("select * from Menu where MaMon LIKE 'TP%'", CommandType.Text, null);
+        }
+        public DataSet LayThongTinMenuTT()
+        {
+            return db.ExecuteQueryDataSet("select * from Menu where MaMon LIKE 'TT%'", CommandType.Text, null);
         }
 
         public bool ThemMon(ref string err, string MaMon, string TenMon, int DonGia)

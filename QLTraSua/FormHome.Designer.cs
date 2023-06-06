@@ -128,6 +128,7 @@
             this.btnHelp.TabIndex = 14;
             this.btnHelp.Text = "Help";
             this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // btnHoaDon
             // 
@@ -142,6 +143,7 @@
             this.btnHoaDon.TabIndex = 13;
             this.btnHoaDon.Text = "Hóa Đơn";
             this.btnHoaDon.UseVisualStyleBackColor = false;
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // btnDoanhThu
             // 
@@ -171,6 +173,7 @@
             this.btnNhapHang.TabIndex = 11;
             this.btnNhapHang.Text = "Nhập Hàng";
             this.btnNhapHang.UseVisualStyleBackColor = false;
+            this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
             // 
             // panelBanSubMenu
             // 

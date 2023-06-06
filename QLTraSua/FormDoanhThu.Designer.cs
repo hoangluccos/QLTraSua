@@ -35,11 +35,11 @@
             this.NgayNhapDoanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLoc = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpCuoi = new System.Windows.Forms.DateTimePicker();
             this.dtpDau = new System.Windows.Forms.DateTimePicker();
-            this.btnLoc = new System.Windows.Forms.Button();
             this.btnTraCuu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoanhThu)).BeginInit();
             this.panel1.SuspendLayout();
@@ -54,7 +54,7 @@
             this.TongTien,
             this.NgayNhapDoanhThu,
             this.MaNhanVien});
-            this.dgvDoanhThu.Location = new System.Drawing.Point(25, 127);
+            this.dgvDoanhThu.Location = new System.Drawing.Point(8, 130);
             this.dgvDoanhThu.Name = "dgvDoanhThu";
             this.dgvDoanhThu.RowHeadersWidth = 51;
             this.dgvDoanhThu.RowTemplate.Height = 24;
@@ -67,6 +67,7 @@
             this.SoThuTu.HeaderText = "Số Thứ Tự";
             this.SoThuTu.MinimumWidth = 6;
             this.SoThuTu.Name = "SoThuTu";
+            this.SoThuTu.Width = 125;
             // 
             // MaHoaDon
             // 
@@ -82,6 +83,7 @@
             this.TongTien.HeaderText = "Tổng Tiền";
             this.TongTien.MinimumWidth = 6;
             this.TongTien.Name = "TongTien";
+            this.TongTien.Width = 125;
             // 
             // NgayNhapDoanhThu
             // 
@@ -106,10 +108,20 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dtpCuoi);
             this.panel1.Controls.Add(this.dtpDau);
-            this.panel1.Location = new System.Drawing.Point(25, 3);
+            this.panel1.Location = new System.Drawing.Point(8, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(464, 118);
             this.panel1.TabIndex = 1;
+            // 
+            // btnLoc
+            // 
+            this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoc.Location = new System.Drawing.Point(357, 22);
+            this.btnLoc.Name = "btnLoc";
+            this.btnLoc.Size = new System.Drawing.Size(80, 71);
+            this.btnLoc.TabIndex = 9;
+            this.btnLoc.Text = "Lọc";
+            this.btnLoc.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -147,20 +159,10 @@
             this.dtpDau.Size = new System.Drawing.Size(272, 27);
             this.dtpDau.TabIndex = 5;
             // 
-            // btnLoc
-            // 
-            this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoc.Location = new System.Drawing.Point(357, 22);
-            this.btnLoc.Name = "btnLoc";
-            this.btnLoc.Size = new System.Drawing.Size(80, 71);
-            this.btnLoc.TabIndex = 9;
-            this.btnLoc.Text = "Lọc";
-            this.btnLoc.UseVisualStyleBackColor = true;
-            // 
             // btnTraCuu
             // 
             this.btnTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraCuu.Location = new System.Drawing.Point(495, 47);
+            this.btnTraCuu.Location = new System.Drawing.Point(478, 50);
             this.btnTraCuu.Name = "btnTraCuu";
             this.btnTraCuu.Size = new System.Drawing.Size(344, 31);
             this.btnTraCuu.TabIndex = 2;
@@ -171,7 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 573);
+            this.ClientSize = new System.Drawing.Size(908, 564);
             this.Controls.Add(this.btnTraCuu);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvDoanhThu);
