@@ -53,19 +53,28 @@ namespace QLTraSua
 
         private void btnLoc_Click(object sender, EventArgs e)
         {
-            dtvdoanhthu.RowFilter = "NgayNhapDoanhThu>'" + dtpDau.Value.ToString() + "'";
-            dgvDoanhThu.DataSource = dtvdoanhthu;
-            int sodong = dgvDoanhThu.Rows.Count;
-            int TongDoanhThu = 0;
-            for (int i=0; i<sodong-1; i++)
+            if (dtpDau.Value.Date > dtpCuoi.Value.Date)
             {
-                TongDoanhThu += Convert.ToInt32(dgvDoanhThu.Rows[i].Cells["TongTien"].Value.ToString());
+                MessageBox.Show("Ngày Bắt đầu không thể lớn hơn ngày Kết Thúc");
             }    
-            txtTongDoanhThu.Text = TongDoanhThu.ToString();
+            else
+            {
+                dtvdoanhthu.RowFilter = "(NgayNhapDoanhThu>'" + dtpDau.Value.Date + "' and NgayNhapDoanhThu<'" + dtpCuoi.Value.Date + "')" +
+                    "or NgayNhapDoanhThu='" + dtpDau.Value.Date + "'or NgayNhapDoanhThu='" + dtpCuoi.Value.Date +"'";
+                dgvDoanhThu.DataSource = dtvdoanhthu;
+                int sodong = dgvDoanhThu.Rows.Count;
+                int TongDoanhThu = 0;
+                for (int i=0; i<sodong-1; i++)
+                {
+                    TongDoanhThu += Convert.ToInt32(dgvDoanhThu.Rows[i].Cells["TongTien"].Value.ToString());
+                }    
+                txtTongDoanhThu.Text = TongDoanhThu.ToString();
+            }    
         }
 
         private void btnShowAll_Click(object sender, EventArgs e)
         {
+            panel1.Enabled = false;
             dtvdoanhthu.RowFilter = "";
             dgvDoanhThu.DataSource = dtvdoanhthu;
             int TongDoanhThu = Convert.ToInt32(dtdoanhthu.Compute("SUM(TongTien)", string.Empty));

@@ -12,6 +12,7 @@ namespace QLTraSua
 {
     public partial class FormBancs : Form
     {
+
         public FormBancs()
         {
             InitializeComponent();
