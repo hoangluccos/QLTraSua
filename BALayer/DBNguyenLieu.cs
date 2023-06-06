@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BALayer
 {
-    internal class DBNguyenLieu
+    public class DBNguyenLieu
     {
         DAL db = null;
 

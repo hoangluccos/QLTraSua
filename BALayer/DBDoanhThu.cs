@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace BALayer
 {
-    internal class DBDoanhThu
+    public class DBDoanhThu
     {
         DAL db = null;
 

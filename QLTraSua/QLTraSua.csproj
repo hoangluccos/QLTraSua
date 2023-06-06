@@ -67,6 +67,12 @@
     <Compile Include="FormBancs.Designer.cs">
       <DependentUpon>FormBancs.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHoaDon.Designer.cs">
+      <DependentUpon>FormHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormBancs.resx">
       <DependentUpon>FormBancs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHoaDon.resx">
+      <DependentUpon>FormHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
@@ -132,6 +141,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BALayer\BALayer.csproj">
+      <Project>{dc783a5f-a3c7-4d05-a066-6c592e74bafa}</Project>
+      <Name>BALayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BALayer
 {
-    internal class DBMenu
+    public class DBMenu
     {
         DAL db = null;
 
