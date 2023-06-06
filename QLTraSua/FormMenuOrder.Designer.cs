@@ -37,10 +37,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvmenu = new System.Windows.Forms.DataGridView();
+            this.btnOther = new System.Windows.Forms.Button();
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnOther = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -49,21 +50,20 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(0, 471);
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnExit.Location = new System.Drawing.Point(701, 449);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(189, 47);
             this.btnExit.TabIndex = 0;
             this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(184)))), ((int)(((byte)(172)))));
             this.panel1.Controls.Add(this.btnOther);
-            this.panel1.Controls.Add(this.btnHoanThanh);
             this.panel1.Controls.Add(this.btnTP);
-            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnYK);
             this.panel1.Controls.Add(this.btnTraSua);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -74,12 +74,13 @@
             // 
             // btnHoanThanh
             // 
-            this.btnHoanThanh.Location = new System.Drawing.Point(-7, 417);
+            this.btnHoanThanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnHoanThanh.Location = new System.Drawing.Point(694, 363);
             this.btnHoanThanh.Name = "btnHoanThanh";
             this.btnHoanThanh.Size = new System.Drawing.Size(196, 48);
             this.btnHoanThanh.TabIndex = 3;
             this.btnHoanThanh.Text = "Hoàn Thành";
-            this.btnHoanThanh.UseVisualStyleBackColor = true;
+            this.btnHoanThanh.UseVisualStyleBackColor = false;
             // 
             // btnTP
             // 
@@ -117,6 +118,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(229)))), ((int)(((byte)(220)))));
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.btnHoanThanh);
+            this.panel2.Controls.Add(this.btnExit);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(189, 0);
@@ -147,30 +151,6 @@
             this.dgvmenu.Size = new System.Drawing.Size(949, 333);
             this.dgvmenu.TabIndex = 0;
             // 
-            // MaMon
-            // 
-            this.MaMon.DataPropertyName = "MaMon";
-            this.MaMon.HeaderText = "Mã Món";
-            this.MaMon.MinimumWidth = 6;
-            this.MaMon.Name = "MaMon";
-            this.MaMon.Width = 125;
-            // 
-            // TenMon
-            // 
-            this.TenMon.DataPropertyName = "TenMon";
-            this.TenMon.HeaderText = "Tên Món";
-            this.TenMon.MinimumWidth = 6;
-            this.TenMon.Name = "TenMon";
-            this.TenMon.Width = 125;
-            // 
-            // DonGia
-            // 
-            this.DonGia.DataPropertyName = "DonGia";
-            this.DonGia.HeaderText = "Đơn Giá";
-            this.DonGia.MinimumWidth = 6;
-            this.DonGia.Name = "DonGia";
-            this.DonGia.Width = 125;
-            // 
             // btnOther
             // 
             this.btnOther.Dock = System.Windows.Forms.DockStyle.Top;
@@ -181,6 +161,37 @@
             this.btnOther.Text = "Khác";
             this.btnOther.UseVisualStyleBackColor = true;
             this.btnOther.Click += new System.EventHandler(this.btnOther_Click);
+            // 
+            // MaMon
+            // 
+            this.MaMon.DataPropertyName = "MaMon";
+            this.MaMon.HeaderText = "Mã Món";
+            this.MaMon.MinimumWidth = 6;
+            this.MaMon.Name = "MaMon";
+            this.MaMon.Width = 280;
+            // 
+            // TenMon
+            // 
+            this.TenMon.DataPropertyName = "TenMon";
+            this.TenMon.HeaderText = "Tên Món";
+            this.TenMon.MinimumWidth = 6;
+            this.TenMon.Name = "TenMon";
+            this.TenMon.Width = 280;
+            // 
+            // DonGia
+            // 
+            this.DonGia.DataPropertyName = "DonGia";
+            this.DonGia.HeaderText = "Đơn Giá";
+            this.DonGia.MinimumWidth = 6;
+            this.DonGia.Name = "DonGia";
+            this.DonGia.Width = 275;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(6, 342);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(622, 185);
+            this.panel4.TabIndex = 1;
             // 
             // FormMenuOrder
             // 
@@ -212,9 +223,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgvmenu;
+        private System.Windows.Forms.Button btnOther;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
-        private System.Windows.Forms.Button btnOther;
+        private System.Windows.Forms.Panel panel4;
     }
 }

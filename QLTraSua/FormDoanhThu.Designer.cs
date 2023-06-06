@@ -103,6 +103,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.btnLoc);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -115,13 +116,14 @@
             // 
             // btnLoc
             // 
+            this.btnLoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoc.Location = new System.Drawing.Point(357, 22);
             this.btnLoc.Name = "btnLoc";
             this.btnLoc.Size = new System.Drawing.Size(80, 71);
             this.btnLoc.TabIndex = 9;
             this.btnLoc.Text = "Lọc";
-            this.btnLoc.UseVisualStyleBackColor = true;
+            this.btnLoc.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -161,13 +163,14 @@
             // 
             // btnTraCuu
             // 
+            this.btnTraCuu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraCuu.Location = new System.Drawing.Point(478, 50);
+            this.btnTraCuu.Location = new System.Drawing.Point(512, 50);
             this.btnTraCuu.Name = "btnTraCuu";
             this.btnTraCuu.Size = new System.Drawing.Size(344, 31);
             this.btnTraCuu.TabIndex = 2;
             this.btnTraCuu.Text = "Tra Cứu Thông Tin Doanh Thu";
-            this.btnTraCuu.UseVisualStyleBackColor = true;
+            this.btnTraCuu.UseVisualStyleBackColor = false;
             // 
             // FormDoanhThu
             // 
