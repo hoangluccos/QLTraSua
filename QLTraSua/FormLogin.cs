@@ -18,7 +18,7 @@ namespace QLTraSua
             + "Integrated Security=True";
         SqlCommand com;
         public FormLogin()
-        {
+        {   
             InitializeComponent();
         }
 

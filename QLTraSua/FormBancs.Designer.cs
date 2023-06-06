@@ -45,12 +45,13 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
             this.button1.Location = new System.Drawing.Point(68, 84);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 69);
             this.button1.TabIndex = 0;
             this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
