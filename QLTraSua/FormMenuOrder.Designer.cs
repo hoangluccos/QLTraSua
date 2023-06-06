@@ -30,18 +30,18 @@
         {
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnHoanThanh = new System.Windows.Forms.Button();
+            this.btnOther = new System.Windows.Forms.Button();
             this.btnTP = new System.Windows.Forms.Button();
             this.btnYK = new System.Windows.Forms.Button();
             this.btnTraSua = new System.Windows.Forms.Button();
+            this.btnHoanThanh = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvmenu = new System.Windows.Forms.DataGridView();
-            this.btnOther = new System.Windows.Forms.Button();
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -72,15 +72,16 @@
             this.panel1.Size = new System.Drawing.Size(189, 530);
             this.panel1.TabIndex = 1;
             // 
-            // btnHoanThanh
+            // btnOther
             // 
-            this.btnHoanThanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnHoanThanh.Location = new System.Drawing.Point(694, 363);
-            this.btnHoanThanh.Name = "btnHoanThanh";
-            this.btnHoanThanh.Size = new System.Drawing.Size(196, 48);
-            this.btnHoanThanh.TabIndex = 3;
-            this.btnHoanThanh.Text = "Hoàn Thành";
-            this.btnHoanThanh.UseVisualStyleBackColor = false;
+            this.btnOther.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOther.Location = new System.Drawing.Point(0, 171);
+            this.btnOther.Name = "btnOther";
+            this.btnOther.Size = new System.Drawing.Size(189, 57);
+            this.btnOther.TabIndex = 4;
+            this.btnOther.Text = "Khác";
+            this.btnOther.UseVisualStyleBackColor = true;
+            this.btnOther.Click += new System.EventHandler(this.btnOther_Click);
             // 
             // btnTP
             // 
@@ -115,6 +116,16 @@
             this.btnTraSua.UseVisualStyleBackColor = true;
             this.btnTraSua.Click += new System.EventHandler(this.btnTraSua_Click);
             // 
+            // btnHoanThanh
+            // 
+            this.btnHoanThanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnHoanThanh.Location = new System.Drawing.Point(694, 363);
+            this.btnHoanThanh.Name = "btnHoanThanh";
+            this.btnHoanThanh.Size = new System.Drawing.Size(196, 48);
+            this.btnHoanThanh.TabIndex = 3;
+            this.btnHoanThanh.Text = "Hoàn Thành";
+            this.btnHoanThanh.UseVisualStyleBackColor = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(229)))), ((int)(((byte)(220)))));
@@ -127,6 +138,13 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(958, 530);
             this.panel2.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(6, 342);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(622, 185);
+            this.panel4.TabIndex = 1;
             // 
             // panel3
             // 
@@ -144,23 +162,12 @@
             this.MaMon,
             this.TenMon,
             this.DonGia});
-            this.dgvmenu.Location = new System.Drawing.Point(6, 3);
+            this.dgvmenu.Location = new System.Drawing.Point(6, 0);
             this.dgvmenu.Name = "dgvmenu";
             this.dgvmenu.RowHeadersWidth = 51;
             this.dgvmenu.RowTemplate.Height = 24;
-            this.dgvmenu.Size = new System.Drawing.Size(949, 333);
+            this.dgvmenu.Size = new System.Drawing.Size(949, 294);
             this.dgvmenu.TabIndex = 0;
-            // 
-            // btnOther
-            // 
-            this.btnOther.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOther.Location = new System.Drawing.Point(0, 171);
-            this.btnOther.Name = "btnOther";
-            this.btnOther.Size = new System.Drawing.Size(189, 57);
-            this.btnOther.TabIndex = 4;
-            this.btnOther.Text = "Khác";
-            this.btnOther.UseVisualStyleBackColor = true;
-            this.btnOther.Click += new System.EventHandler(this.btnOther_Click);
             // 
             // MaMon
             // 
@@ -185,13 +192,6 @@
             this.DonGia.MinimumWidth = 6;
             this.DonGia.Name = "DonGia";
             this.DonGia.Width = 275;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(6, 342);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(622, 185);
-            this.panel4.TabIndex = 1;
             // 
             // FormMenuOrder
             // 
