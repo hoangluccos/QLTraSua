@@ -36,32 +36,32 @@
             this.btnTraSua = new System.Windows.Forms.Button();
             this.btnHoanThanh = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnThem = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dgvDatMon = new System.Windows.Forms.DataGridView();
+            this.MaMon1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonGia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvmenu = new System.Windows.Forms.DataGridView();
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvDatMon = new System.Windows.Forms.DataGridView();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.MaMon1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonGia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatMon)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvmenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDatMon)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnExit.Location = new System.Drawing.Point(701, 449);
+            this.btnExit.Location = new System.Drawing.Point(694, 449);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(189, 47);
+            this.btnExit.Size = new System.Drawing.Size(196, 47);
             this.btnExit.TabIndex = 0;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -149,13 +149,71 @@
             this.panel2.Size = new System.Drawing.Size(958, 530);
             this.panel2.TabIndex = 2;
             // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnThem.Location = new System.Drawing.Point(694, 342);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(196, 48);
+            this.btnThem.TabIndex = 4;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.dgvDatMon);
-            this.panel4.Location = new System.Drawing.Point(6, 342);
+            this.panel4.Location = new System.Drawing.Point(6, 320);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(622, 185);
+            this.panel4.Size = new System.Drawing.Size(622, 207);
             this.panel4.TabIndex = 1;
+            // 
+            // dgvDatMon
+            // 
+            this.dgvDatMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatMon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaMon1,
+            this.SoLuong,
+            this.DonGia1,
+            this.ThanhTien});
+            this.dgvDatMon.Location = new System.Drawing.Point(4, 3);
+            this.dgvDatMon.Name = "dgvDatMon";
+            this.dgvDatMon.RowHeadersWidth = 51;
+            this.dgvDatMon.RowTemplate.Height = 24;
+            this.dgvDatMon.Size = new System.Drawing.Size(615, 173);
+            this.dgvDatMon.TabIndex = 0;
+            // 
+            // MaMon1
+            // 
+            this.MaMon1.DataPropertyName = "MaMon";
+            this.MaMon1.HeaderText = "Mã Món";
+            this.MaMon1.MinimumWidth = 6;
+            this.MaMon1.Name = "MaMon1";
+            this.MaMon1.Width = 125;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 125;
+            // 
+            // DonGia1
+            // 
+            this.DonGia1.DataPropertyName = "DonGia";
+            this.DonGia1.HeaderText = "Đơn Giá";
+            this.DonGia1.MinimumWidth = 6;
+            this.DonGia1.Name = "DonGia1";
+            this.DonGia1.Width = 125;
+            // 
+            // ThanhTien
+            // 
+            this.ThanhTien.DataPropertyName = "ThanhTien";
+            this.ThanhTien.HeaderText = "Thành Tiền";
+            this.ThanhTien.MinimumWidth = 6;
+            this.ThanhTien.Name = "ThanhTien";
+            this.ThanhTien.Width = 125;
             // 
             // panel3
             // 
@@ -163,7 +221,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(958, 339);
+            this.panel3.Size = new System.Drawing.Size(958, 314);
             this.panel3.TabIndex = 0;
             // 
             // dgvmenu
@@ -204,64 +262,6 @@
             this.DonGia.Name = "DonGia";
             this.DonGia.Width = 275;
             // 
-            // dgvDatMon
-            // 
-            this.dgvDatMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatMon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaMon1,
-            this.SoLuong,
-            this.DonGia1,
-            this.ThanhTien});
-            this.dgvDatMon.Location = new System.Drawing.Point(4, 4);
-            this.dgvDatMon.Name = "dgvDatMon";
-            this.dgvDatMon.RowHeadersWidth = 51;
-            this.dgvDatMon.RowTemplate.Height = 24;
-            this.dgvDatMon.Size = new System.Drawing.Size(615, 172);
-            this.dgvDatMon.TabIndex = 0;
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnThem.Location = new System.Drawing.Point(694, 342);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(196, 48);
-            this.btnThem.TabIndex = 4;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // MaMon1
-            // 
-            this.MaMon1.DataPropertyName = "MaMon";
-            this.MaMon1.HeaderText = "Mã Món";
-            this.MaMon1.MinimumWidth = 6;
-            this.MaMon1.Name = "MaMon1";
-            this.MaMon1.Width = 125;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.DataPropertyName = "SoLuong";
-            this.SoLuong.HeaderText = "Số Lượng";
-            this.SoLuong.MinimumWidth = 6;
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.Width = 125;
-            // 
-            // DonGia1
-            // 
-            this.DonGia1.DataPropertyName = "DonGia";
-            this.DonGia1.HeaderText = "Đơn Giá";
-            this.DonGia1.MinimumWidth = 6;
-            this.DonGia1.Name = "DonGia1";
-            this.DonGia1.Width = 125;
-            // 
-            // ThanhTien
-            // 
-            this.ThanhTien.DataPropertyName = "ThanhTien";
-            this.ThanhTien.HeaderText = "Thành Tiền";
-            this.ThanhTien.MinimumWidth = 6;
-            this.ThanhTien.Name = "ThanhTien";
-            this.ThanhTien.Width = 125;
-            // 
             // FormMenuOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -276,9 +276,9 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatMon)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvmenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDatMon)).EndInit();
             this.ResumeLayout(false);
 
         }

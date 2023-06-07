@@ -76,7 +76,8 @@ namespace QLTraSua
 
         private void btnNhapHang_Click(object sender, EventArgs e)
         {
-            
+            openChildForm(new FormNhapHang());
+
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)

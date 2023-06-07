@@ -23,13 +23,15 @@ namespace BALayer
             return db.ExecuteQueryDataSet("select * from DatMon", CommandType.Text, null);
         }
 
-        public bool ThemDatMon(ref string err, string MaBan, string MaMon, int SoLuong, int DonGia)
+        public bool ThemDatMon(ref string err, string MaBan, string MaMon, int SoLuong, int DonGia, int ThanhTien)
         {
             return db.MyExecuteNonQuery("spThemDatMon", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@MaBan", MaBan),
                 new SqlParameter("@MaMon", MaMon),
-                new SqlParameter("SoLuong", SoLuong),
-                new SqlParameter("@DonGia", DonGia));
+                new SqlParameter("@SoLuong", SoLuong),
+                new SqlParameter("@DonGia", DonGia),
+                new SqlParameter("@ThanhTien", ThanhTien));
+
         }
 
         public bool CapNhatDatMon(ref string err, string MaBan, string MaMon, int SoLuong, int DonGia, int ThanhTien)
@@ -37,7 +39,7 @@ namespace BALayer
             return db.MyExecuteNonQuery("spCapNhatDatMon", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@MaBan", MaBan),
                 new SqlParameter("@MaMon", MaMon),
-                new SqlParameter("SoLuong", SoLuong),
+                new SqlParameter("@SoLuong", SoLuong),
                 new SqlParameter("@DonGia", DonGia),
                 new SqlParameter("@ThanhTien", ThanhTien));
         }

@@ -97,7 +97,7 @@ namespace QLTraSua
                 dtdatmon.Clear();
                 dtdatmon = dbdatmon.LayThongTinDatMon().Tables[0];
 
-                dgvDatMon.DataSource = dtdatmon;
+                dgvDatMon.DataSource = dtdatmon;                           
                 dtvdatmon = new DataView(dtdatmon);
 
                 dtvdatmon.RowFilter = "MaBan='" + MaBan + "'";
@@ -108,7 +108,7 @@ namespace QLTraSua
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender,   EventArgs e)
         {
             string err = "";
             DialogResult traloi;
@@ -161,12 +161,12 @@ namespace QLTraSua
 
             string MaMon = dgvmenu.Rows[r].Cells[0].Value.ToString();
             int DonGia = Convert.ToInt32(dgvmenu.Rows[r].Cells[2].Value.ToString());
-
+            int thanhTien = FormSoLuongDat.LuuSoLuong.SoLuong * DonGia;
             bool f = false;
             string err = "";
             try
             {
-                f = dbdatmon.ThemDatMon(ref err, MaBan, MaMon, FormSoLuongDat.LuuSoLuong.SoLuong, DonGia);
+                f = dbdatmon.ThemDatMon(ref err, FormBancs.LuuMaBan.MaBan, MaMon, FormSoLuongDat.LuuSoLuong.SoLuong, DonGia , thanhTien);
                 if (f)
                 {
                     MessageBox.Show("Đã thêm 1 Món vào " + MaBan);

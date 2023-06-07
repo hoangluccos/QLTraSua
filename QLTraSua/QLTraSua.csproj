@@ -103,6 +103,12 @@
     <Compile Include="FormMenuOrder.Designer.cs">
       <DependentUpon>FormMenuOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhapHang.designer.cs">
+      <DependentUpon>FormNhapHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSoLuongDat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuOrder.resx">
       <DependentUpon>FormMenuOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhapHang.resx">
+      <DependentUpon>FormNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSoLuongDat.resx">
       <DependentUpon>FormSoLuongDat.cs</DependentUpon>
