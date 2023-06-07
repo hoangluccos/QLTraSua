@@ -49,14 +49,7 @@ namespace QLTraSua
             static public string MaBan;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            LuuMaBan.MaBan = button1.Text.ToString();
-            Form x = new FormThongTinBill();
-            x.StartPosition = FormStartPosition.CenterScreen;
-            x.ShowDialog();
-        }
-
+        
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
 
@@ -76,6 +69,116 @@ namespace QLTraSua
             DoiMau(button10.Text.ToString(), button10);
             DoiMau(button11.Text.ToString(), button11);
             DoiMau(button12.Text.ToString(), button12);
+        }
+
+        private void FormInBill_Load(object sender, EventArgs e)
+        {
+            DoiMau(button1.Text.ToString(), button1);
+            DoiMau(button2.Text.ToString(), button2);
+            DoiMau(button3.Text.ToString(), button3);
+            DoiMau(button4.Text.ToString(), button4);
+            DoiMau(button5.Text.ToString(), button5);
+            DoiMau(button6.Text.ToString(), button6);
+            DoiMau(button7.Text.ToString(), button7);
+            DoiMau(button8.Text.ToString(), button8);
+            DoiMau(button9.Text.ToString(), button9);
+            DoiMau(button10.Text.ToString(), button10);
+            DoiMau(button11.Text.ToString(), button11);
+            DoiMau(button12.Text.ToString(), button12);
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button1.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button2.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button3.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button4.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button5.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button6.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button7.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button8.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button9.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button10.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button11.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
+
+        private void button12_Click_1(object sender, EventArgs e)
+        {
+            LuuMaBan.MaBan = button12.Text.ToString();
+            Form x = new FormThongTinBill();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
         }
     }
 

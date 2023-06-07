@@ -17,6 +17,7 @@ namespace QLTraSua
         DBDatMon dbdatmon;
         DataTable dtdatmon = null;
         DataView dtvdatmon = null;
+        string x = FormInBill.LuuMaBan.MaBan;
         public FormThongTinBill()
         {
             InitializeComponent();
@@ -30,8 +31,8 @@ namespace QLTraSua
                 dtdatmon.Clear();
                 dtdatmon = dbdatmon.LayThongTinDatMon().Tables[0];
                 dtvdatmon = new DataView(dtdatmon);
-                string x = FormInBill.LuuMaBan.MaBan.ToString();
-                dtvdatmon.RowFilter = "MaBan =  ' " + x + " ' ";
+                
+                dtvdatmon.RowFilter = "MaBan='" + x + "'";
                 dgvDatMon.DataSource = dtvdatmon;
                 
                 //MessageBox.Show(FormInBill.LuuMaBan.MaBan.ToString());
@@ -45,7 +46,14 @@ namespace QLTraSua
 
         private void FormThongTinBill_Load(object sender, EventArgs e)
         {
-            LoadData(); 
+            LoadData();
+            txtMaHD.Focus();
+            datetime.Value = DateTime.Today;
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

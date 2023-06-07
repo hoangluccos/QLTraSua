@@ -152,7 +152,18 @@ namespace QLTraSua
 
         private void FormBancs_Load(object sender, EventArgs e)
         {
-
+            DoiMau(button1.Text.ToString(), button1);
+            DoiMau(button2.Text.ToString(), button2);
+            DoiMau(button3.Text.ToString(), button3);
+            DoiMau(button4.Text.ToString(), button4);
+            DoiMau(button5.Text.ToString(), button5);
+            DoiMau(button6.Text.ToString(), button6);
+            DoiMau(button7.Text.ToString(), button7);
+            DoiMau(button8.Text.ToString(), button8);
+            DoiMau(button9.Text.ToString(), button9);
+            DoiMau(button10.Text.ToString(), button10);
+            DoiMau(button11.Text.ToString(), button11);
+            DoiMau(button12.Text.ToString(), button12);
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)

@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaHD = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.datetime = new System.Windows.Forms.DateTimePicker();
             this.dgvDatMon = new System.Windows.Forms.DataGridView();
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,13 +64,13 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "MaHD";
             // 
-            // textBox1
+            // txtMaHD
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(129, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 28);
-            this.textBox1.TabIndex = 2;
+            this.txtMaHD.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaHD.Location = new System.Drawing.Point(129, 66);
+            this.txtMaHD.Name = "txtMaHD";
+            this.txtMaHD.Size = new System.Drawing.Size(121, 28);
+            this.txtMaHD.TabIndex = 2;
             // 
             // label3
             // 
@@ -82,13 +82,14 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Ngày In";
             // 
-            // dateTimePicker1
+            // datetime
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(129, 107);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(311, 28);
-            this.dateTimePicker1.TabIndex = 4;
+            this.datetime.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datetime.Location = new System.Drawing.Point(129, 107);
+            this.datetime.Name = "datetime";
+            this.datetime.Size = new System.Drawing.Size(311, 28);
+            this.datetime.TabIndex = 4;
+            this.datetime.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dgvDatMon
             // 
@@ -98,7 +99,7 @@
             this.SoLuong,
             this.DonGia,
             this.ThanhTien});
-            this.dgvDatMon.Location = new System.Drawing.Point(4, 158);
+            this.dgvDatMon.Location = new System.Drawing.Point(5, 154);
             this.dgvDatMon.Name = "dgvDatMon";
             this.dgvDatMon.RowHeadersWidth = 51;
             this.dgvDatMon.RowTemplate.Height = 24;
@@ -175,9 +176,9 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvDatMon);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.datetime);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMaHD);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormThongTinBill";
@@ -193,9 +194,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaHD;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker datetime;
         private System.Windows.Forms.DataGridView dgvDatMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
