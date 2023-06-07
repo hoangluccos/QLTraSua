@@ -61,6 +61,8 @@ namespace QLTraSua
         private void btnInBill_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new FormInBill());
+
         }
 
         private void btnDatBan_Click(object sender, EventArgs e)

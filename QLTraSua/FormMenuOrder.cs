@@ -195,5 +195,10 @@ namespace QLTraSua
             MessageBox.Show("Gọi Món thành công");
             Close();
         }
+
+        private void dgvDatMon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

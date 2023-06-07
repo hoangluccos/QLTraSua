@@ -182,6 +182,7 @@
             this.dgvDatMon.RowTemplate.Height = 24;
             this.dgvDatMon.Size = new System.Drawing.Size(615, 173);
             this.dgvDatMon.TabIndex = 0;
+            this.dgvDatMon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatMon_CellContentClick);
             // 
             // MaMon1
             // 

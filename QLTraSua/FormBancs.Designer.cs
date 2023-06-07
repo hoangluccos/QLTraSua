@@ -45,7 +45,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Location = new System.Drawing.Point(68, 84);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 69);
@@ -67,7 +67,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.IndianRed;
+            this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.Location = new System.Drawing.Point(471, 84);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(131, 69);
@@ -169,12 +169,13 @@
             // btnCapNhat
             // 
             this.btnCapNhat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCapNhat.BackColor = System.Drawing.Color.DarkCyan;
             this.btnCapNhat.Location = new System.Drawing.Point(728, 506);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(89, 46);
             this.btnCapNhat.TabIndex = 12;
             this.btnCapNhat.Text = "Cập Nhật";
-            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.UseVisualStyleBackColor = false;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // FormBancs

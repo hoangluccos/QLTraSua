@@ -12,6 +12,7 @@ namespace BALayer
     public class DBDatMon
     {
         DAL db = null;
+        string @x;
 
         public DBDatMon()
         {
