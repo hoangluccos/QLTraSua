@@ -194,6 +194,7 @@
             this.txtTongDoanhThu.Name = "txtTongDoanhThu";
             this.txtTongDoanhThu.Size = new System.Drawing.Size(118, 27);
             this.txtTongDoanhThu.TabIndex = 4;
+            this.txtTongDoanhThu.TextChanged += new System.EventHandler(this.txtTongDoanhThu_TextChanged);
             // 
             // btnShowAll
             // 
