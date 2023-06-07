@@ -22,6 +22,10 @@ namespace QLTraSua
             InitializeComponent();
             dbdoanhthu = new DBDoanhThu();
         }
+        public class LuuSTT
+        {
+            static public int stt;
+        }
         void LoadData()
         {
             try
@@ -33,6 +37,7 @@ namespace QLTraSua
                 dtvdoanhthu = new DataView(dtdoanhthu);
 
                 dgvDoanhThu.DataSource = dtdoanhthu;
+
             }
             catch (SqlException ex)
             {
@@ -87,13 +92,6 @@ namespace QLTraSua
         {
 
         }
-
-        public class LuuSTT
-        {
-            static public int stt;
-        }
-        
-
-        
+       
     }
 }

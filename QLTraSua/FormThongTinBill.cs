@@ -20,6 +20,7 @@ namespace QLTraSua
         DataView dtvdatmon = null;
 
         DBDoanhThu dbdoanhthu;
+        DataTable dtdoanhthu;
         DBHoaDonBanHang dbhoadonbanhang;
 
         DBBan dbban;
@@ -80,8 +81,12 @@ namespace QLTraSua
 
         private void btnXuat_Click(object sender, EventArgs e)
         {
+            dtdoanhthu = new DataTable();
+            dtdoanhthu.Clear();
+            dtdoanhthu = dbdoanhthu.LayThongTinDoanhThu().Tables[0];
+
             string MaHD = txtMaHD.Text;
-            int stt = FormDoanhThu.LuuSTT.stt;
+            int stt = dtdoanhthu.Rows.Count;
             int tongTien = int.Parse(txtTongTien.Text);
             DateTime x = DateTime.Today;
             string maNV = txtMaNV.Text;
@@ -109,7 +114,7 @@ namespace QLTraSua
             
             try
             {
-                f = dbdoanhthu.ThemDoanhThu(ref err, stt, MaHD, tongTien, x, maNV);
+                f = dbdoanhthu.ThemDoanhThu(ref err, stt++,  MaHD, tongTien, x, maNV);
                 if (f)
                 {
                     MessageBox.Show("Đã thêm  vào Doanh Thu" + MaHD);
