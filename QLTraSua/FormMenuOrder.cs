@@ -22,12 +22,15 @@ namespace QLTraSua
         DataTable dtdatmon = null;
         DataView dtvdatmon = null;
 
+        DBBan dbban;
+
         string MaBan = FormBancs.LuuMaBan.MaBan;
         public FormMenuOrder()
         {
             InitializeComponent();
             dbmenu = new DBMenu();
             dbdatmon = new DBDatMon();
+            dbban = new DBBan();
         }
         void LoadData1() //ts
         {
@@ -110,15 +113,18 @@ namespace QLTraSua
         }
         private void btnExit_Click(object sender,   EventArgs e)
         {
-            string err = "";
+            string err = "", err1 = "";
             DialogResult traloi;
             traloi = MessageBox.Show("Bạn có muốn thoát không", "Câu Trả lời",
             MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (traloi == DialogResult.Yes)
             {
                 bool f = dbdatmon.XoaAllDatMon(ref err, MaBan);
-                if(f)
+                bool f2 = dbban.CapNhatTinhTrangBan(ref err1, MaBan);
+                if(f == true && f2 == true)
+                {
                     Close();
+                }    
             }    
             else
             {

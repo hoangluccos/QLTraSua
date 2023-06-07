@@ -42,11 +42,12 @@ namespace BALayer
                 new SqlParameter("@MaBan", MaBan));
         }
 
-        public int CheckTinhTrangBan(ref string err, string MaBan)
+        public bool CheckTinhTrangBan(ref string err, string MaBan)
         {
-            return Convert.ToInt32(db.MyExecuteNonQuery("spCheckTinhTrangBan", CommandType.StoredProcedure, ref err,
-                new SqlParameter("@MaBan", MaBan)));
+            return db.MyExecuteNonQuery("spCheckTinhTrangBan", CommandType.StoredProcedure, ref err,
+                new SqlParameter("@MaBan", MaBan));
         }
+
     }
 }
 

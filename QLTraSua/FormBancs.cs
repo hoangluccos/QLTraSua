@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,152 +21,154 @@ namespace QLTraSua
             InitializeComponent();
             dbban = new DBBan();
         }
+        public string KiemTraTinhTrang(string MaBan)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=(local)\\SQLEXPRESS;Initial Catalog=QLQUANTRASUA;"
+               + "Integrated Security=True");
+            SqlCommand cmd = new SqlCommand("SELECT dbo.CheckTinhTrang(@MaBan)", conn);
+
+            cmd.Parameters.AddWithValue("@MaBan", MaBan);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            string str = dt.Rows[0][0].ToString();
+            return str;
+        }
+
+        public void DoiMau(string MaBan, Button x)
+        {
+            int TinhTrang = 0;
+            TinhTrang = Convert.ToInt32(KiemTraTinhTrang(MaBan.ToString()));
+
+            //MessageBox.Show(TinhTrang.ToString());
+
+            if (TinhTrang == 1)
+                x.BackColor = Color.IndianRed;
+            else
+                x.BackColor = Color.Transparent;
+        }
+
         public class LuuMaBan
         {
             static public string MaBan;
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button1.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button1.Text.ToString());
-            if (TinhTrang == 1)
-                button1.BackColor = Color.IndianRed;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button2.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button2.Text.ToString());
-            if (TinhTrang == 1)
-                button2.BackColor = Color.IndianRed;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button3.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button3.Text.ToString());
-            if (TinhTrang == 1)
-                button3.BackColor = Color.IndianRed;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button4.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button4.Text.ToString());
-            if (TinhTrang == 1)
-                button4.BackColor = Color.IndianRed;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button5.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button5.Text.ToString());
-            if (TinhTrang == 1)
-                button5.BackColor = Color.IndianRed;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button6.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button6.Text.ToString());
-            if (TinhTrang == 1)
-                button6.BackColor = Color.IndianRed;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button7.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button7.Text.ToString());
-            if (TinhTrang == 1)
-                button7.BackColor = Color.IndianRed;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button8.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button8.Text.ToString());
-            if (TinhTrang == 1)
-                button8.BackColor = Color.IndianRed;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button9.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button9.Text.ToString());
-            if (TinhTrang == 1)
-                button9.BackColor = Color.IndianRed;
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button10.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button10.Text.ToString());
-            if (TinhTrang == 1)
-                button10.BackColor = Color.IndianRed;
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            string err = "";
             LuuMaBan.MaBan = button11.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button11.Text.ToString());
-            if (TinhTrang == 1)
-                button11.BackColor = Color.IndianRed;
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            string err = "";
+            
             LuuMaBan.MaBan = button12.Text.ToString();
             Form x = new FormMenuOrder();
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
-            int TinhTrang = dbban.CheckTinhTrangBan(ref err, button12.Text.ToString());
-            if (TinhTrang == 1)
-                button12.BackColor = Color.IndianRed;
+            
+        }
+
+        private void FormBancs_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            DoiMau(button1.Text.ToString(), button1);
+            DoiMau(button2.Text.ToString(), button2);
+            DoiMau(button3.Text.ToString(), button3);
+            DoiMau(button4.Text.ToString(), button4);
+            DoiMau(button5.Text.ToString(), button5);
+            DoiMau(button6.Text.ToString(), button6);
+            DoiMau(button7.Text.ToString(), button7);
+            DoiMau(button8.Text.ToString(), button8);
+            DoiMau(button9.Text.ToString(), button9);
+            DoiMau(button10.Text.ToString(), button10);
+            DoiMau(button11.Text.ToString(), button11);
+            DoiMau(button12.Text.ToString(), button12);
         }
     }
 }

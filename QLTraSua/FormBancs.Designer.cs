@@ -40,6 +40,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.btnCapNhat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -55,12 +56,13 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Location = new System.Drawing.Point(268, 84);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 69);
             this.button2.TabIndex = 1;
             this.button2.Text = "B02";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
@@ -164,12 +166,24 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCapNhat.Location = new System.Drawing.Point(742, 506);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(75, 23);
+            this.btnCapNhat.TabIndex = 12;
+            this.btnCapNhat.Text = "Cập Nhật";
+            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
+            // 
             // FormBancs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(908, 564);
+            this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -185,6 +199,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormBancs";
             this.Text = "FormBancs";
+            this.Load += new System.EventHandler(this.FormBancs_Load);
             this.ResumeLayout(false);
 
         }
@@ -203,5 +218,6 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnCapNhat;
     }
 }
