@@ -97,6 +97,12 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMaHD_MaNV_SL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaHD_MaNV_SL.Designer.cs">
+      <DependentUpon>FormMaHD_MaNV_SL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenuOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMaHD_MaNV_SL.resx">
+      <DependentUpon>FormMaHD_MaNV_SL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuOrder.resx">
       <DependentUpon>FormMenuOrder.cs</DependentUpon>

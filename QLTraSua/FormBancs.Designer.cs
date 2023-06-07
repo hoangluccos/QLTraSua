@@ -169,9 +169,9 @@
             // btnCapNhat
             // 
             this.btnCapNhat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCapNhat.Location = new System.Drawing.Point(742, 506);
+            this.btnCapNhat.Location = new System.Drawing.Point(728, 506);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(75, 23);
+            this.btnCapNhat.Size = new System.Drawing.Size(89, 46);
             this.btnCapNhat.TabIndex = 12;
             this.btnCapNhat.Text = "Cập Nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
