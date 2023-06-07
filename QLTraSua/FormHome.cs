@@ -92,5 +92,12 @@ namespace QLTraSua
             openChildForm(new FormHelp());
 
         }
+
+        private void FormHome_Load(object sender, EventArgs e)
+        {
+            Form x = new FormLogin();
+            x.StartPosition = FormStartPosition.CenterScreen;
+            x.ShowDialog();
+        }
     }
 }

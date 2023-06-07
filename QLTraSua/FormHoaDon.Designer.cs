@@ -35,6 +35,7 @@
             this.NgayXuatHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDonBanHang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,11 +105,23 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "DANH SÁCH HÓA ĐƠN BÁN HÀNG";
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.LightCoral;
+            this.button13.Location = new System.Drawing.Point(824, 12);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(55, 40);
+            this.button13.TabIndex = 15;
+            this.button13.Text = "Exit";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // FormHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 564);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvHoaDonBanHang);
             this.Name = "FormHoaDon";
@@ -129,5 +142,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayXuatHoaDon;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNhanVien;
+        private System.Windows.Forms.Button button13;
     }
 }

@@ -43,6 +43,7 @@
             this.txtMaNL = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhapHang)).BeginInit();
             this.panel2.SuspendLayout();
@@ -79,7 +80,7 @@
             this.MaNguyenLieu.HeaderText = "Mã Nguyên Liệu";
             this.MaNguyenLieu.MinimumWidth = 6;
             this.MaNguyenLieu.Name = "MaNguyenLieu";
-            this.MaNguyenLieu.Width = 150;
+            this.MaNguyenLieu.Width = 180;
             // 
             // TenNguyenLieu
             // 
@@ -87,7 +88,7 @@
             this.TenNguyenLieu.HeaderText = "Tên Nguyên Liệu";
             this.TenNguyenLieu.MinimumWidth = 6;
             this.TenNguyenLieu.Name = "TenNguyenLieu";
-            this.TenNguyenLieu.Width = 150;
+            this.TenNguyenLieu.Width = 200;
             // 
             // DonGia
             // 
@@ -95,7 +96,7 @@
             this.DonGia.HeaderText = "Đơn Giá";
             this.DonGia.MinimumWidth = 6;
             this.DonGia.Name = "DonGia";
-            this.DonGia.Width = 150;
+            this.DonGia.Width = 180;
             // 
             // label1
             // 
@@ -194,11 +195,23 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Bảng Chi Tiết Nhập Hàng";
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.LightCoral;
+            this.button13.Location = new System.Drawing.Point(841, 20);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(55, 40);
+            this.button13.TabIndex = 15;
+            this.button13.Text = "Exit";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // FormNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 564);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnThem);
@@ -220,9 +233,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvNhapHang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaNguyenLieu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenNguyenLieu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox txtDonGia;
@@ -233,5 +243,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNguyenLieu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNguyenLieu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
+        private System.Windows.Forms.Button button13;
     }
 }

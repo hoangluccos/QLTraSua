@@ -181,5 +181,10 @@ namespace QLTraSua
             DoiMau(button11.Text.ToString(), button11);
             DoiMau(button12.Text.ToString(), button12);
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

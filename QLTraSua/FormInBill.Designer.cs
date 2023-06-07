@@ -42,6 +42,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCapNhat = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button12
@@ -189,11 +190,23 @@
             this.btnCapNhat.UseVisualStyleBackColor = false;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click_1);
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.LightCoral;
+            this.button13.Location = new System.Drawing.Point(841, 12);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(55, 40);
+            this.button13.TabIndex = 27;
+            this.button13.Text = "Exit";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // FormInBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 564);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button12);
@@ -231,5 +244,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCapNhat;
+        private System.Windows.Forms.Button button13;
     }
 }

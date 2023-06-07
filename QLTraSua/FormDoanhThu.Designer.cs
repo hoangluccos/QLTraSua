@@ -44,6 +44,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtTongDoanhThu = new System.Windows.Forms.TextBox();
             this.btnShowAll = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoanhThu)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -207,11 +208,23 @@
             this.btnShowAll.UseVisualStyleBackColor = true;
             this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.LightCoral;
+            this.button13.Location = new System.Drawing.Point(841, 15);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(55, 40);
+            this.button13.TabIndex = 15;
+            this.button13.Text = "Exit";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // FormDoanhThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 564);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.btnShowAll);
             this.Controls.Add(this.txtTongDoanhThu);
             this.Controls.Add(this.label3);
@@ -247,5 +260,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTongDoanhThu;
         private System.Windows.Forms.Button btnShowAll;
+        private System.Windows.Forms.Button button13;
     }
 }

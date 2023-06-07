@@ -180,6 +180,11 @@ namespace QLTraSua
             x.StartPosition = FormStartPosition.CenterScreen;
             x.ShowDialog();
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }
